@@ -1,5 +1,6 @@
 # FDUStudyDiary
-my study diary in fudan
+my study diary in fudan.
+OS: Ubuntu 20.04
 
 # Oct 14
 1. code the (Li Sun, IJSAC 2021)
