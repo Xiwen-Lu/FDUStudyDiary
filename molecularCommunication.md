@@ -31,4 +31,10 @@ MEMS/NEMS and biology
 communications are central
 
 # Lecture 2: Basic physical concepts
+1. Concepts from physical chemistry
+- Basic physical concepts
+
+Transimitter releases molecules, receiver is the 
+comparision with wireless
+
 

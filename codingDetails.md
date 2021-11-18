@@ -10,7 +10,9 @@ besides, dataloader -> q~ (1,10)
 
 1.2. loss F of D and G.
 
-1.3. 
+1.3. verify the gradient ascent methods.
+
+1.3. FFT in the train procedure
 
 - read viterbiNet, try to change the fake function.plot
 
