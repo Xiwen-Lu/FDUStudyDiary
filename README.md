@@ -21,3 +21,4 @@ OS: Ubuntu 20.04
 1. finish the homework of DSP, review the chapter1-5.
 2. recode the viterbiNet
 
+# Nov 21
