@@ -13,3 +13,6 @@
 # Thoughts in molecular communication
 1. is there possibility that make a dataset in molecular communication?
 contain diversity and nums?
+
+
+

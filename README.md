@@ -21,4 +21,8 @@ OS: Ubuntu 20.04
 1. finish the homework of DSP, review the chapter1-5.
 2. recode the viterbiNet
 
-# Nov 21
+# Aug 14 2022
+1. draw the attention heatmap in molecular communication
+
+# Sep 5 2022
+1. finish the fixmatch on the nih chest dataset, the feel is really sad. I am too simple.

@@ -86,6 +86,12 @@ run with '--privileged'
 
 `docker ps` to see all the running containers
 
+## create a cuda docker container
+
+# add a docker group
+sudo groupadd docker
+sudo usermod -aG docker $USER
+
 # some usage about the ubuntu system
 `ps aux` to see the pid in system
 `kill -9 pid` to kill some pid
@@ -102,3 +108,81 @@ y = model(input)
 g = make_dot(y)
 g.render('name', view = False)
 
+# install TexStudio on ubuntu
+because texstudio isnot in the public repository of ubuntu, so we must add is ppa on the ubuntu repository
+$ sudo add-apt-repository ppa:sunderme/texstudio
+$ sudo apt remove texstudio-doc texstudio-l10n
+$ sudo apt update
+$ sudo apt install texstudio
+$ sudo apt remove --autoremove texstudio
+
+# delete a swap file
+rm ...swp
+
+# install docker wechat on ubuntu
+Method1:
+install docker-wehcat:dochat
+wget https://raw.githubusercontent.com/huan/docker-wechat/master/dochat.sh
+
+xhost +; sudo chown -R $USER $HOME/DoChat/
+sudo chown -R $(whoami) $HOME/DoChat/
+
+fail to install wechat, because it always remind me that disabling to patch something
+
+# zotero
+download the tar.gz
+create a desktop: 
+run the set_launch_icon 
+then, ln -s zotero.desktop ~/.local/share/applications/zotero.desktop
+attention, here the source file zotero.desktop should use the absolute filepath, cannnot use the relevant path. 
+
+# tex-live, and let it can automatically install packages
+sudo apt-get install texlive-full
+
+# install wine
+search for wineHQ (wine linux), then follow the instruction of the website
+
+# fix the apt-get update problem
+sudo sed -i.bak 's/id.old-/old-/g' /etc/apt/sources.list
+sudo apt-get update
+
+another problem about PPA, the solution is to delete the PPA in the software&update.
+
+# uninstall software
+sudo apt list --installed
+sudo apt remove package-name
+
+# wechat
+deepin wechat
+first need to install the deepin wine
+
+# error while loading shared libraries: libtinfo.so.5: No such file or directory
+sudo apt-get install libtinfo5
+
+# clash for windows
+just download the clash for windows ubuntu, that's fine.
+
+# kill application in ubuntu
+Alt+F2, and press xkill
+or, open the system monitor, kill the process
+
+# find the unresolved library
+in Qt
+export QT_DEBUG_PLUGINS=1
+find the true reason that cause the problem, such as 'libqxcb.so' cannot import
+then, cd the directory of 'libqxcb.so'
+run 'ldd libqxcb.so'
+then find something that not found, such as 'libxcb-cursor.so.0'
+then install it by 'sudo apt-get install libxcb-cursor0'
+Ok, then the problem solved.
+
+
+# edit the swap running system
+sudo gedit /etc/sysctl.conf
+# add at last
+vm.swappiness=20
+
+
+# to uninstall something
+first can find it by see the application in /usr/share/applications or ~/.local/share/applications
+then find the path of the software.
